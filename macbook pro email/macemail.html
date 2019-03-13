@@ -8,54 +8,66 @@
   <style media="text/css">
     * { text-rendering: optimizelegibility; -webkit-font-smoothing: antialiased; }
 
-    @media only screen and (max-device-width: 600px){
+    @media only screen and (max-width: 480px){
       .container{
-        width: 100%;
+        width: 100% !important;
+        display: block;
       }
       .header{
         width: 100%;
       }
-      .info-section{
-        width: 100% !important;
+      .info-sectionLeft{
+        float: left !important;
+        width: auto !important;
       }
-      .info-section p{
-        width: 100% !important; 
-        font-size: 13px !important;
+      .info-sectionRight{
+        float: right !important;
+        width: auto !important;
       }
       .info-sectionimg{
-        width: 100% !important;
-      }
-      .footer-imgSection td p{
-        width: 100% !important;
-        font-size: 14px !important;
+        width: 100%;
       }
       .footer-imgSection td a{
-        font-size: 8px !important;
+        font-size: 9px !important;
       }
       .footer-imgSectionLeft{
-        width: 33% !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        margin-bottom: 10px !important;
+      }
+      .footer-imgSectionLeft p{
+        text-align: center !important;
+        margin: 0 auto !important;
       }
       .footer-imgSectionRight{
-        width: 33% !important;
-      }
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+      } 
+      .footer-imgSectionRight p{
+        text-align: center !important;
+        margin: 0 auto !important;
+      } 
       .break{
         display: none;
       }
       .footer-3col{
-        width: 100% !important;
+        width: 100%;
         
       }
       .footer-3colLeft p a{
-        font-size: 9px !important;
+        font-size: 10px !important;
       }
       .footer-3colCenter p a{
-        font-size: 9px !important;
+        font-size: 10px !important;
       }
       .footer-3colRight p a{
-        font-size: 9px !important;
+        font-size: 10px !important;
       }
       .footer td a{
-        font-size: 8.5px !important;
+        font-size: 10px !important;
+        padding: 3px !important;
       }
     }
 
@@ -114,7 +126,7 @@
                 <tr>
                   <td>
                     <!-- Start of left column -->
-                    <table class="info-sectionLeft"align="left" width="45%">
+                    <table class="info-sectionLeft" width="45%">
                       <tr>
                         <td>
                           <hr style="border:1px solid white;">
@@ -132,7 +144,7 @@
                     </table>
                     <!-- End of left column -->
                     <!-- Start of right column -->
-                    <table class="info-sectionRight"align="right" width="45%">
+                    <table class="info-sectionRight" width="45%">
                       <tr>
                         <td>
                           <hr style="border:1px solid white;">
@@ -189,14 +201,14 @@
                     <!-- Start of left footer column  -->
                     <table class="footer-imgSectionLeft"align="left" width="47%"style="height:400px;background:#181818;">
                       <tr>
-                        <td align="left">
+                        <td>
                           <p style="color:#fff;font-size:23px;font-weight:600;font-family:system-ui, Helvetica Neue;margin:0;padding:10px;">Unleash your creativity.</p>
                           <p style="color:#666666;font-size:13px;text-align: left;font-weight:700;font-family:system-ui, Helvetica Neue;margin:0;padding:10px;">Explore today at Apple sessions in <br class="break">photography, video, and music. New<br class="break">programming happening in stores<br class="break">every day.</p>
-                          <a href="#" style="color:#2196F3;text-decoration: none;font-size:12px;font-family:system-ui, Helvetica Neue;padding:10px;">See what's happening near you ></a>
-                          <table align="left" style="padding-top:45px;">
+                          <a href="#"  style="color:#2196F3;text-decoration: none;font-size:12px;font-family:system-ui, Helvetica Neue;padding:10px;">See what's happening near you ></a>
+                          <table  align="center"style="padding-top:45px;">
                             <tr>
                               <td>
-                                <img src="https://i.postimg.cc/CL66GrVN/yellow.png" alt="Yellow">
+                                <img align="center"src="https://i.postimg.cc/CL66GrVN/yellow.png" alt="Yellow">
                               </td>
                             </tr>
                           </table>
@@ -205,16 +217,16 @@
                     </table>
                     <!-- End of left footer column  -->
                     <!-- Start of right footer column  -->
-                    <table class="footer-imgSectionRight"align="right" width="47%" style="background:#181818;height:400px;">
+                    <table class="footer-imgSectionRight" align="right" width="47%" style="background:#181818;height:400px;">
                       <tr>
-                        <td align="left">
-                          <p class="blue"style="color:#fff;font-size:23px;font-weight:600;font-family:system-ui, Helvetica Neue;margin:0;padding:10px;">Buy a Mac.<br>Get Beats Solo3<br>Wireless on us.</p>
-                          <p style="color:#666666;font-size:13px;font-weight:700;font-family:system-ui, Helvetica Neue;margin:0;padding:10px;">Available to students, their parents,<br class="break">faculty, and staff.</p>
-                          <a href="#" style="color:#2196F3;text-decoration: none;font-size:12px;font-family:system-ui, Helvetica Neue;padding:10px;">Shop the Apple Education Store ></a>
-                          <table align="right" style="padding-top:34px;">
+                        <td>
+                          <p class="blue"style="color:#fff;text-align:left;font-size:23px;font-weight:600;font-family:system-ui, Helvetica Neue;margin:0;padding:10px;">Buy a Mac.<br>Get Beats Solo3<br>Wireless on us.</p>
+                          <p style="color:#666666;font-size:13px;text-align:left;font-weight:700;font-family:system-ui, Helvetica Neue;margin:0;padding:10px;">Available to students, their parents,<br class="break">faculty, and staff.</p>
+                          <a href="#" class="fa"style="color:#2196F3;text-decoration: none;font-size:12px;font-family:system-ui, Helvetica Neue;padding:10px;">Shop the Apple Education Store ></a>
+                          <table align="center"style="padding-top:34px;">
                             <tr>
                               <td>
-                                <img src="https://i.postimg.cc/XYCxwVLj/blue.png" alt="Headphones">
+                                <img align="center"src="https://i.postimg.cc/XYCxwVLj/blue.png" alt="Headphones">
                               </td>
                             </tr>
                           </table>
